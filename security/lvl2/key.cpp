@@ -2,12 +2,31 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+#include <cstring>
+#include <string.h>
 #include "key.h"
 
-void key::init()
+using std::string;
+
+key::key()
 {
 	srand (time(NULL));
-	for(int i = 0; i < 256; i++)
-		keyVal[i] = rand() % 5 + 1;
+	publicKey = 3;
+	privateKey = 10;
+	div = 3;
+}
+string key::encode(string str)
+{
+	string code = str;
+	return code;
+}
+string key::decode(string str)
+{
+	string decoded = str;
+	return decoded;
 }
 
+unsigned long long getPrime()
+{
+	return 0;
+}
