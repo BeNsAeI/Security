@@ -6,34 +6,22 @@ using std::cout;
 using std::endl;
 using std::string;
 
-string encode(string str, int * arr)
-{
-	for(int i = 0; i < str.size(); i++)
-	{
-		str[i] =(char)((int)str[i] + arr[i]-65);
-	}
-	return str;
-}
-
-string decode(string str, int * arr)
-{
-	for(int i = 0; i < str.size(); i++)
-	{
-		str[i] = (char)((int)str[i] - arr[i]+65);
-	}
-	return str;
-}
-
 int main(int argc, char ** argv)
 {
-	key tmp;
-	tmp.init();
+	key tmp;;
 	string str,code,final;
-	str = "Test!";
+
+	str = "ABCD";
 	cout << "Message is: " << str << endl;
-	code = encode(str,tmp.keyVal);
+	cout << "---------------------------------" << endl;
+
+	code = tmp.encode(str);
 	cout << "Encoded message is: " << code << endl;
-	final = decode(code,tmp.keyVal);
+	cout << "---------------------------------" << endl;
+
+	final = tmp.decode(code);
 	cout << "Decoded message is: " << final << endl;
+	cout << "---------------------------------" << endl;
+
 	return 0;
 }
