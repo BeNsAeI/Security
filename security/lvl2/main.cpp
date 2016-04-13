@@ -11,7 +11,7 @@ int main(int argc, char ** argv)
 	key tmp;;
 	string str,code,final;
 
-	str = "ABCD";
+	str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	cout << "Message is: " << str << endl;
 	cout << "---------------------------------" << endl;
 

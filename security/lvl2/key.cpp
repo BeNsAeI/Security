@@ -16,12 +16,12 @@ using std::string;
 key::key()
 {
 
-	p1 = 2;			//select
-	p2 = 5;		//select
+	p1 = 5;			//select
+	p2 = 7;		//select
 	rho = (p1-1)*(p2-1); 	// rho(N)
 	mod = p1 * p2;		//mod value or N
-	publicKey = 3;		//e value could be random
-	privateKey = 3;	//or d value 
+	publicKey = 5;		//e value could be random
+	privateKey = 5;	//or d value 
 
 	srand (time(NULL));
 }
