@@ -30,6 +30,8 @@ int main(int argc, char ** argv)
 	tmp.init();
 	string str,code,final;
 	str = "Test!";
+	cout << "Enter Text: ";
+	cin  >> str;
 	cout << "Message is: " << str << endl;
 	code = encode(str,tmp.keyVal);
 	cout << "Encoded message is: " << code << endl;

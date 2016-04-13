@@ -11,7 +11,7 @@ int main(int argc, char ** argv)
 	key tmp;;
 	string str,code,final;
 
-	cout << "Please enter text (All caps!):" << endl;
+	cout << "Please enter text (All caps!): ";
 	cin  >> str;
 //	str = "THIS TEXT IS MAGICAL";
 	cout << "Message is: " << str << endl;
